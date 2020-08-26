@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SD.Models;
+using System;
+using System.Runtime.CompilerServices;
 
 namespace SD
 {
@@ -6,7 +8,8 @@ namespace SD
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Controller c = new Controller();
+
         }
     }
 }

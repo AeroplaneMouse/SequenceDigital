@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SD.Models
 {
@@ -8,13 +9,20 @@ namespace SD.Models
 
         public int ID { get; }
         public string Name { get; set; }
+        public List<Card> Hand { get; set; }
 
         public Player(string name)
         {
             ID = _id++;
             Name = name;
+
+            // Initiate hand
+            Hand = new List<Card>();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void PlayCard()
         {
             throw new NotImplementedException();
